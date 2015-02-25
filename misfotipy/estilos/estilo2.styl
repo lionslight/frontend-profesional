@@ -1,9 +1,9 @@
 @import "normalize.styl"
+@import "fonts.styl"
 gris_oscuro = #333333
 gris_claro = #818181
 gris_masclaro = #f0f0f0
 rojo = #BD255B
-@import "fonts.styl"
 a
 	text-decoration none
 body
@@ -14,7 +14,7 @@ figure
 ul
 	margin 0
 	padding 0
-image
+img
 	vertical-align top
 //buttons
 .button-menu
@@ -162,8 +162,8 @@ image
 			margin-right 1em
 	.image
 		img 
-			//width 100%	
-			//height 100%	
+			width 100%	
+			height auto//100%	
 	.playing
 		&.medium
 			width auto
@@ -180,7 +180,7 @@ image
 		.item
 			float left
 			list-style none
-			padding 1em
+			//padding 1em
 			a
 				color gris_oscuro
 				cursor pointer
@@ -196,7 +196,7 @@ image
 		.title
 			display none
 	.isotipo
-		width 122px
+		width 76px
 	/*img
 		width auto*/
 	.logo
