@@ -50,7 +50,16 @@ image
 .padding
 	padding 1em
 .padding-tb
-	padding 1em 0	
+	padding 1em 0
+.left
+	float left
+.right
+	float right
+.wrap
+	width 1000px 
+.round
+	border-radius 50%
+	overflow hidden	
 .progress
 	margin 1em 0
 	position relative
@@ -121,9 +130,14 @@ image
 		margin .5em 0
 		
 .playing
-	display none
+	//display auto //temporal
 	&.small
 		width 20em
+.input
+	border 1px solid gris_claro
+	height 2.5em
+	border-radius 5px
+	padding 0 1em 0 2em
 		
 @media screen and (min-width:480px)
 	body
@@ -133,9 +147,47 @@ image
 			margin-right 1em
 	.image
 		img 
-			width 100%		
+			width 100%	
+			height 100%	
 	.playing
 		&.medium
 			width auto
 			
+@media screen and (min-width:1000px)
+	body 
+		background #fff //#ff9900
+	.button-menu
+		display none
+	.header
+		height auto
+		.title
+			display none
+	img
+		width auto
+	.logo
+		padding 1.3em 0
+		overflow hidden	
+	.avatar
+		width 38px
+		height 38px
+	.username
+		color gris_claro
+		position relative
+		top 9px
+		margin-left .5em
+		&:after
+			content ""
+			border-left 10px solid transparent
+			border-top 10px solid gris_claro
+			border-right 10px solid transparent
+			//border-bottom 10px solid black
+			display inline-block
+			margin-left .4em
+
+
+
 		
+
+
+
+	
