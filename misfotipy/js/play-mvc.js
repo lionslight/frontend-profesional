@@ -127,22 +127,22 @@ var controller = {
 		// Inicializacion
 		this.model.setSongs([
 			{
-				name: 'Ill Be My Mirror',
-				artist: '8in8',
-				src: 'media/8in8_-_05_-_Ill_Be_My_Mirror.mp3',
-				img: 'img/songs/test.jpg'
+				name: 'I Bet My Life',
+				artist: 'Imagine Dragons',
+				src: 'media/I_Bet_My_Life.mp3',
+				img: 'img/testplaying.jpg'
+			},
+			{
+				name: 'Dog Days Are Over',
+				artist: 'Florence + The Machine',
+				src: 'media/Dog_Days.mp3',
+				img: 'img/music/dogdaysareover.jpg'
 			},
 			{
 				name: 'Floss Suffers From Gamma Radiation',
 				artist: 'Blue Ducks',
-				src: 'media/Blue_Ducks_-_01_-_Floss_Suffers_From_Gamma_Radiation.mp3',
-				img: 'img/songs/test.jpg'
-			},
-			{
-				name: 'IMF',
-				artist: 'DOt',
-				src: 'media/DOt_-_05_-_IMF.mp3',
-				img: 'img/songs/test.jpg'
+				src: 'media/I_Bet_My_Life.mp3',
+				img: 'img/ibetmylife.jpg'
 			}
 		])
 		this.model.setActive( 0 )
