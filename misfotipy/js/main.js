@@ -1,4 +1,4 @@
-Sfotipy = {};
+/*Sfotipy = {};
 
 Sfotipy.Song = Backbone.Model.extend({});
 Sfotipy.Songs = Backbone.Collection.extend({ //Songs es una coleccion de una lista de canciones / elementos tipo Song
@@ -54,4 +54,7 @@ Sfotipy.Router = Backbone.Router.extend({
 
 Sfotipy.app = new Sfotipy.Router();
 Backbone.history.start();
-window.Sfotipy = Sfotipy;
+window.Sfotipy = Sfotipy;*/
+$(function() {
+  Sfotipy.app = new Sfotipy.Router();
+});

@@ -1,5 +1,5 @@
 //solo es la definicion del namespace
-var Sfotipy  {
+var Sfotipy = {
 	Models : {},
 	Views : {},
 	Collections : {},
