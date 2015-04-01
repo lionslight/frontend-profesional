@@ -15,6 +15,9 @@ gris_oscuro = #333333
 gris_claro = #818181
 gris_masclaro = #f0f0f0
 rojo = #BD255B
+rosa = #CC2F6F
+blanco = #ffffff
+negro = #000000
 a
 	text-decoration none
 body
@@ -27,6 +30,9 @@ ul
 	padding 0
 img
 	vertical-align top
+hr
+	width 80%
+	border 1px solid gris_masclaro
 //buttons
 .button-menu
 	position absolute
@@ -115,6 +121,10 @@ img
 		right 0
 		top -2px
 		animation 1s circulo infinite
+.link
+	text-decoration underline
+	font-size 12px
+	
 @keyframes state 
 	/*from
 		background red
@@ -227,7 +237,117 @@ img
 		content ""
 		display inline-block
 		margin-left .4em
-
+@media screen and (max-width:480px)
+	body
+		background blanco
+		color blanco
+	.center
+		height 400px
+		position relative
+		background url('../img/mobile/loginmobile.jpg')
+	.background
+		width 100%
+		height 400px
+		position absolute
+		z-index 0
+		img
+			width 100%
+			height 100%
+	.over
+		top 0
+		position absolute
+		z-index 1000
+		.sfotipy-logo
+			//margin 80px auto 0 auto
+			img
+				margin 80px 61px 0px 61px;
+		.social-media	
+			width 218px
+			height 46px
+			border-radius 0.3em
+			font-size 0.8em
+			&:nth-child(odd)
+				margin 52px auto 0 auto
+			&:nth-child(even)
+				margin 8px auto 0 auto
+		.legend
+			width 80%
+			margin 20px auto 0px auto
+			text-align center
+			span
+				text-align center
+				font-size 23px
+		.facebook
+		.twitter
+			margin-left 50px
+		.borde	
+			border-right 1px solid 
+			
+		.facebook
+			//background #3D5A98
+			background url('../img/mobile/facebook.png') no-repeat
+			background-size cover
+			
+		.twitter
+			//background #5FA9DD
+			background url('../img/mobile/twitter.png') no-repeat
+			background-size cover
+			font-size 23px
+		.texto-social
+			text-decoration none
+			color blanco
+			font-size 12px
+			margin-left 56px
+			margin-top 18px
+	.options
+		//position relative
+		background blanco
+		height 80px
+		.left
+		.right
+			padding-top 17px
+			.link
+				color gris_claro
+		.left
+			padding-left 60px
+		.right
+			padding-right 60px
+	
+	.modulos
+		width 100%
+		&:nth-child(odd)
+				img
+				.legend
+					float none
+		&:nth-child(even)
+				img
+				.legend
+					float none
+		.modulo
+			.legend
+				padding 1em
+			figure
+				img
+					width 100%
+					border-radius 0px
+		.tit
+		.desc
+			margin 0px auto 0px auto
+			text-align center	
+		.tit
+			color gris_oscuro
+		.desc
+			color gris_claro
+			&.grande
+				font-size 19px	
+	.footer
+		background gris_oscuro
+		height 40px
+		bottom 0
+		padding 10px 20px 10px 20px
+		.link
+			color blanco
+			margin-right 10px
 @media screen and (min-width:480px)
 	body
 		background gris_masclaro
@@ -241,7 +361,7 @@ img
 	.playing
 		&.medium
 			width auto
-			
+				
 @media screen and (min-width:1000px)
 	body 
 		background gris_masclaro //#ff9900
@@ -287,9 +407,117 @@ img
 	.logo
 	.playlist
 		display block
+//########------ login------------#######
+	.center
+		height 600px
+		position relative
+		background url('../img/background.jpg')
+		.over
+			top 0
+			position absolute
+			z-index 1000
+			.sfotipy-logo
+				img
+					margin 80px 200px 0px 200px
+			.social-media
+				width 340px
+				height 75px
+				border-radius 0.3em
+				font-size 0.8em
+				//margin 0 auto 0 auto
+				&:nth-child(odd)
+					margin 52px auto 0 auto
+				&:nth-child(even)
+					margin 8px auto 0 auto
+				
+			.legend
+				width 80%
+				margin 20px auto 0px auto
+				text-align center
+				span
+					color blanco
+					text-align center
+					font-size 50px
+			.facebook
+			.twitter
+				//margin-left 50px
+				width 350px
+				height 72px
+			.facebook
+				background url('../img/mobile/facebook.png') no-repeat
+				background-size cover
+			.twitter
+				background url('../img/mobile/twitter.png') no-repeat
+				background-size cover
+			.texto-social
+				text-decoration none
+				color blanco
+				font-size 19px
+				margin-left 81px
+				margin-top 29px
+	.options
+		background transparent //PTE POR LA UBICACION
+					//
+		.link
+			color rosa
+			font-size 24px
+	.modulos
+		width 100%
+		.modulo
+			height 350px
+			padding-top 35px 
+			&:nth-child(odd)
+				padding-left 90px
+				figure
+					float left
+				.legend
+					margin-left 93px
+			&:nth-child(even)
+				padding-right 90px
+				figure
+					float right
+				.legend
+					margin-right 93px
+			.legend
+				padding 10px 300px
+				text-align left
+			figure
+				width 300px
+				height 300px
+				img
+					width 100%
+					height 100%
+					border-radius 50%
+					overflow hidden
+			.tit
+				font-size 33px
+				color gris_oscuro
+			.desc 
+				font-size 30px
+				color gris_claro
+				&.grande
+					font-size 33px	
+	.footer
+		background gris_oscuro
+		height 65px
+		bottom 0
+		padding 10px 20px 10px 20px
+		.link
+			color blanco
+			margin-right 10px
+		.left
+			margin-left 199px
+			margin-top 12px
+			img
+				width 125px
+				height 	39px
+		.legend
+			margin-top 12px
+			font-size 18px
+			&.right
+				margin-right 700px
+				
 
-
-		
 
 
 
