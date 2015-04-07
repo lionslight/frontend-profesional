@@ -44,6 +44,8 @@ hr
 	padding 1.4rem
 	font-size 0
 	text-align center
+.contenedor
+	magin 0 auto 0 auto
 .action
 	color white
 	margin-right .5em
@@ -237,6 +239,21 @@ hr
 		content ""
 		display inline-block
 		margin-left .4em
+
+@media screen and (max-width: 399px)
+	.center
+		.over
+			img
+			&.sfotipy-logo
+				margin 81px 61px 0px 61px
+						
+@media screen and (min-width:400px)
+	.center
+		.over
+			img
+			&.sfotipy-logo
+				margin 90px 101px 0px 101px
+				
 @media screen and (max-width:480px)
 	body
 		background blanco
@@ -244,7 +261,45 @@ hr
 	.center
 		height 400px
 		position relative
-		background url('../img/mobile/loginmobile.jpg')
+		background url('../img/background.jpg') no-repeat
+		background-size auto
+		background-position 100% 0%
+		.over
+			top 0
+			position absolute
+			z-index 1000
+			/*.sfotipy-logo
+				margin 80px 61px 0px 61px */
+			.social-media
+				width 218px
+				height 46px
+				border-radius 0.3em
+				font-size 0.8em
+				&:nth-child(odd)
+					margin 52px auto 0 auto
+				&:nth-child(even)
+					margin 8px auto 0 auto
+			.facebook
+			.twitter
+				margin-left 50px
+				background-size cover
+				.texto-social
+					text-decoration none
+					color blanco
+					font-size 12px
+					margin-left 56px
+					margin-top 18px
+			.facebook
+				background url('../img/mobile/facebook.png') 					
+			.twitter
+				background url('../img/mobile/twitter.png')
+			.legend
+				width 80%
+				margin 20px auto 0px auto
+				text-align center
+				span
+					text-align center
+					font-size 23px			
 	.background
 		width 100%
 		height 400px
@@ -253,52 +308,7 @@ hr
 		img
 			width 100%
 			height 100%
-	.over
-		top 0
-		position absolute
-		z-index 1000
-		.sfotipy-logo
-			//margin 80px auto 0 auto
-			img
-				margin 80px 61px 0px 61px;
-		.social-media	
-			width 218px
-			height 46px
-			border-radius 0.3em
-			font-size 0.8em
-			&:nth-child(odd)
-				margin 52px auto 0 auto
-			&:nth-child(even)
-				margin 8px auto 0 auto
-		.legend
-			width 80%
-			margin 20px auto 0px auto
-			text-align center
-			span
-				text-align center
-				font-size 23px
-		.facebook
-		.twitter
-			margin-left 50px
-		.borde	
-			border-right 1px solid 
-			
-		.facebook
-			//background #3D5A98
-			background url('../img/mobile/facebook.png') no-repeat
-			background-size cover
-			
-		.twitter
-			//background #5FA9DD
-			background url('../img/mobile/twitter.png') no-repeat
-			background-size cover
-			font-size 23px
-		.texto-social
-			text-decoration none
-			color blanco
-			font-size 12px
-			margin-left 56px
-			margin-top 18px
+	
 	.options
 		//position relative
 		background blanco
@@ -308,6 +318,7 @@ hr
 			padding-top 17px
 			.link
 				color gris_claro
+				font-size 12px
 		.left
 			padding-left 60px
 		.right
@@ -316,6 +327,7 @@ hr
 	.modulos
 		width 100%
 		&:nth-child(odd)
+			
 				img
 				.legend
 					float none
@@ -324,11 +336,13 @@ hr
 				.legend
 					float none
 		.modulo
+			padding 
 			.legend
 				padding 1em
 			figure
 				img
 					width 100%
+					float none
 					border-radius 0px
 		.tit
 		.desc
@@ -348,7 +362,8 @@ hr
 		.link
 			color blanco
 			margin-right 10px
-@media screen and (min-width:480px)
+		
+@media screen and (min-width:480px) 
 	body
 		background gris_masclaro
 	.song
@@ -361,9 +376,15 @@ hr
 	.playing
 		&.medium
 			width auto
+//#######----------login----------------#####
+	/*.center
+		.over
+			img
+			&.sfotipy-logo
+				margin 81px 101px 0px 101px*/
 				
 @media screen and (min-width:1000px)
-	body 
+/*	body 
 		background gris_masclaro //#ff9900
 	.button-menu
 		display none
@@ -407,80 +428,98 @@ hr
 	.logo
 	.playlist
 		display block
+		*/
 //########------ login------------#######
 	.center
 		height 600px
 		position relative
-		background url('../img/background.jpg')
+		background url('../img/background.jpg') no-repeat
+		background-size auto
 		.over
 			top 0
 			position absolute
 			z-index 1000
 			.sfotipy-logo
-				img
-					margin 80px 200px 0px 200px
+				margin 80px 400px 0px 400px 
 			.social-media
-				width 340px
-				height 75px
+				width 218px
+				height 46px
 				border-radius 0.3em
 				font-size 0.8em
-				//margin 0 auto 0 auto
 				&:nth-child(odd)
 					margin 52px auto 0 auto
 				&:nth-child(even)
 					margin 8px auto 0 auto
+			
+			.facebook
+				background url('../img/mobile/facebook.png') no-repeat	
+								
+			.twitter
+				background url('../img/mobile/twitter.png') no-repeat
 				
+			.facebook
+			.twitter
+				width 350px
+				height 72px
+				margin-left 50px
+				background-size cover
+				.texto-social
+					text-decoration none
+					color blanco
+					font-size 19px
+					margin-left 81px
+					margin-top 29px
 			.legend
 				width 80%
 				margin 20px auto 0px auto
 				text-align center
 				span
-					color blanco
 					text-align center
-					font-size 50px
-			.facebook
-			.twitter
-				//margin-left 50px
-				width 350px
-				height 72px
-			.facebook
-				background url('../img/mobile/facebook.png') no-repeat
-				background-size cover
-			.twitter
-				background url('../img/mobile/twitter.png') no-repeat
-				background-size cover
-			.texto-social
-				text-decoration none
-				color blanco
-				font-size 19px
-				margin-left 81px
-				margin-top 29px
-	.options
-		background transparent //PTE POR LA UBICACION
-					//
-		.link
-			color rosa
-			font-size 24px
-	.modulos
+					color blanco
+					font-size 50px			
+	.background
 		width 100%
+		height 400px
+		position absolute
+		z-index 0
+		img
+			width 100%
+			height 100%
+	
+	.options
+		//position relative
+		background blanco
+		height 80px
+		.left
+		.right
+			padding-top 17px
+			.link
+				color rosa
+				font-size 24px
+		.left
+			padding-left 60px
+		.right
+			padding-right 60px
+	
+	.modulos
+		//width 100%
+		&:nth-child(odd)
+			margin-left 90px
+			figure
+				float left
+			.legend
+				//margin-left 93px
+		&:nth-child(even)
+			margin-right 90px
+			figure
+				float right
+			.legend
+				//margin-right 93px
 		.modulo
 			height 350px
 			padding-top 35px 
-			&:nth-child(odd)
-				padding-left 90px
-				figure
-					float left
-				.legend
-					margin-left 93px
-			&:nth-child(even)
-				padding-right 90px
-				figure
-					float right
-				.legend
-					margin-right 93px
 			.legend
 				padding 10px 300px
-				text-align left
 			figure
 				width 300px
 				height 300px
@@ -489,14 +528,19 @@ hr
 					height 100%
 					border-radius 50%
 					overflow hidden
-			.tit
-				font-size 33px
-				color gris_oscuro
-			.desc 
-				font-size 30px
-				color gris_claro
-				&.grande
-					font-size 33px	
+		.tit
+		.desc
+			margin 0px auto 0px auto
+			text-align center	
+		.tit
+			font-size 33px
+			color gris_oscuro
+		.desc 
+			font-size 30px
+			color gris_claro
+			&.grande
+				font-size 33px	
+	
 	.footer
 		background gris_oscuro
 		height 65px
@@ -515,10 +559,7 @@ hr
 			margin-top 12px
 			font-size 18px
 			&.right
-				margin-right 700px
-				
-
-
+				margin-right 55%
 
 
 	
